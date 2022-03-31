@@ -1,12 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import SimpleReactLightbox from 'simple-react-lightbox';
+
+import App from './components/App';
+
 import reportWebVitals from './reportWebVitals';
+
+import './styles/main.scss';
+
+
+library.add(fab, fas)
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SimpleReactLightbox>
+      <Router>
+        <App />
+      </Router>
+    </SimpleReactLightbox>
   </React.StrictMode>,
   document.getElementById('root')
 );

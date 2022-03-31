@@ -1,0 +1,48 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    padding: 0 30px;
+    margin: 0 auto;
+
+    &__inp {
+        display: block;
+        flex-basis: 100%;
+        padding: 6px 10px;
+        margin: 0 0 20px;
+        // border-radius: 6px;
+        outline: none;
+
+        @media (min-width: 500px) {
+            flex-basis: calc(50% - 10px);
+        }
+    }
+
+    &__textarea {
+        display: block;
+        flex-basis: 100%;
+        min-height: 220px;
+        padding: 6px 10px;
+        margin: 0 0 20px;
+        resize: vertical;
+        // border-radius: 6px;
+        outline: none;
+    }
+
+    &__submit {
+        display: block;
+        flex-basis: 100%;
+        padding: 6px;
+        border: 1px solid black;
+        border-radius: 2px;
+        background-color: #bbccba;
+        outline: none;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: $green;
+            color: #eee;
+        }
+    }
+}
