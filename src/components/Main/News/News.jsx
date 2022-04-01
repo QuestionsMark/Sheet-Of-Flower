@@ -5,6 +5,7 @@ import Titles from '../../Utils/Titles';
 import { smLorem } from '../../../utils/lorem';
 
 import previewImg from '../../../media/images/1.png';
+import ScreenCarouselWithInfo from '../../Utils/ScreenCarouselWithInfo';
 
 //
 const slides = [
@@ -28,8 +29,9 @@ const slides = [
 const News = () => {
     return ( 
         <main className="main">
-            <Titles title="Nowości" subtitle="Już są z nami"/>
-            <CarouselWithInfo slides={slides}/>
+            {/* <Titles title="Nowości" subtitle="Już są z nami"/> */}
+            {/* <CarouselWithInfo slides={slides}/> */}
+            <ScreenCarouselWithInfo />
         </main>
      );
 }

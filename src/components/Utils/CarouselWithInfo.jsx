@@ -24,15 +24,15 @@ const CarouselWithInfo = ({ slides }) => {
 
         return (
             <div className="carousel__info">
-                {title && <h3 className="carousel__title">{title}</h3>}
+                {title && <h3 className="carousel__title carousel__title--center">{title}</h3>}
                 <p className="text carousel__text">{description}</p>
             </div>
         )
     };
   
     return (
-        <div className="container carousel__container">
-            <Carousel activeIndex={index} onSelect={handleSelect} pause={false} indicators={false} interval={10000}>
+        <div className="container carousel__container carousel__container--portrait">
+            <Carousel activeIndex={index} onSelect={handleSelect} pause={false} interval={15000}>
                 {carouselList()}
             </Carousel>
             {showInfo()}

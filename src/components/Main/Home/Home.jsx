@@ -12,6 +12,7 @@ import Galery from '../../Utils/Galery';
 import verticalImg from '../../../media/images/1.png';
 import squareImg from '../../../media/images/2.png';
 import horizontalImg from '../../../media/images/3.png';
+import ScreenCarousel from '../../Utils/ScreenCarousel';
 
 //
 const galery = [
@@ -58,8 +59,9 @@ const Home = () => {
     return ( 
         <main className="main home">
             <section className="home__section intro">
-                <Galery galery={galery}/>
-                <Introduction />
+                <ScreenCarousel />
+                {/* <Galery galery={galery}/>
+                <Introduction /> */}
             </section>
             <section className="home__section about-us">
                 <Titles title="Poznajmy się" subtitle="Krótko o nas"/>

@@ -5,7 +5,7 @@ import Image from './Image';
 const FolderGalery = ({ folders }) => {
 
     const folderGaleryList = folders.map(f => (
-        <li className="galery__item">
+        <li className="galery__item" key={f.id}>
             <Link to={`/cards/${f.title.toLowerCase()}`}>
                 <Image alt={f.title} src={f.img} />
                 <div className="galery__curtain" />

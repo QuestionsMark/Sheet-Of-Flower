@@ -1,19 +1,16 @@
 import React from 'react';
-import { SRLWrapper } from 'simple-react-lightbox';
 
 import SingleGaleryItem from './SingleGaleryItem';
 
 const Galery = ({ galery }) => {
 
-    const galeryList = galery.map(i => <SingleGaleryItem key={i.id} alt={i.title} src={i.img} />);
+    const galeryList = galery.map(i => <SingleGaleryItem key={i.id} item={i} />);
 
     return ( 
         <section className="galery">
-            <SRLWrapper>
-                <ul className="galery__list">
-                    {galeryList}
-                </ul>
-            </SRLWrapper>
+            <ul className="galery__list">
+                {galeryList}
+            </ul>
         </section>
      );
 }

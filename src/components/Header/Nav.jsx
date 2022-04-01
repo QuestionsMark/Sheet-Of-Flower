@@ -20,9 +20,10 @@ const Nav = () => {
     return ( 
         <nav className="menu">
             <Link to="/" className="menu__brand-title">
-                <div className="img-wrapper menu__img-wrapper">
+                {/* <div className="img-wrapper menu__img-wrapper">
                     <img src={logoImg} alt="logo" className="img" />
-                </div>
+                </div> */}
+                <h1 style={{ textAlign: 'center' }}>LOGO</h1>
             </Link>
             <FontAwesomeIcon icon="fa-solid fa-bars" className="menu__bar-icon" onClick={toggleMenu}/>
             <ul className="menu__list" ref={menuRef}>

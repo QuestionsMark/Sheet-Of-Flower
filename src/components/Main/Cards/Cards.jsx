@@ -3,8 +3,9 @@ import React from 'react';
 import Titles from '../../Utils/Titles';
 
 import { smLorem } from '../../../utils/lorem';
-import previewImg from '../../../media/images/1.png';
+import previewImg from '../../../media/images/4.png';
 import FolderGalery from '../../Utils/FolderGalery';
+import Text from '../../Utils/Text';
 
 //
 const folders = [
@@ -30,8 +31,11 @@ const folders = [
 
 const Cards = () => {
     return ( 
-        <main className="main">
-            <Titles title="Kolekcje" subtitle="Pięknie na papierze"/>
+        <main className="main cards">
+            {/* <Titles title="Kolekcje" subtitle="Pięknie na papierze"/> */}
+            <section className="pictures__description">
+                <Text />
+            </section>
             <FolderGalery folders={folders}/>
         </main>
      );
